@@ -8,7 +8,7 @@ var knex = require('knex')({
     },
     pool: { min: 0, max: 7 }
   })
-knex.schema.createTable('ng_data', (table) => {
+knex.schema.createTable('ng', (table) => {
     table.increments('id')
     table.string('name')
     table.string("lastname")
